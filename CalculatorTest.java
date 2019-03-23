@@ -16,7 +16,7 @@ class CalculatorTest {
     @Test
     @DisplayName("Calculator Subtraction")
     void sub() {
-        int a = 7;
+        int a = 10;
         int b = 3;
         int expected = a - b;
         Assertions.assertEquals(expected, calculator.sub(a, b));
