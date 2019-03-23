@@ -6,14 +6,24 @@ import static org.junit.jupiter.api.Assertions.assertTimeout;
 
 class ClockTest {
 
-    Clock clock = new Clock();
+    private Clock clock = new Clock();
 
     @Test
-    @DisplayName("Check If Time Exceeded")
-    void timecheck() {
+    @DisplayName("Check If Ticking Time Exceeded")
+    void ticking() {
         assertTimeout(ofMillis(100), ()->clock.ticking());
-        assertTimeout(ofMillis(100), ()->clock.alarming());
-        assertTimeout(ofMillis(100), ()->clock.broken());
     }
 
+    @Test
+    @DisplayName("Check If Alarming Time Exceeded")
+    void alarming() {
+        assertTimeout(ofMillis(100), ()->clock.alarming());
+    }
+
+    @Test
+    @DisplayName("Check If Broken Time Exceeded")
+    void broken() {
+        assertTimeout(ofMillis(100), ()->clock.broken());
+    }
 }
+
