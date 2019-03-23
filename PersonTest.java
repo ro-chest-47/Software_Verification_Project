@@ -7,7 +7,7 @@ class PersonTest {
     @Test
     @DisplayName("Check Null")
     void checkNull() {
-        Person pat = new Person("Pat", 24);
+        Person pat = new Person("Pat", 30);
         Person mat = new Person("Mat", 25);
         Person noOne = new Person(null, 20);
         Assertions.assertNotNull(pat.getName());
