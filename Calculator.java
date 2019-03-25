@@ -1,6 +1,6 @@
 public class Calculator {
     public int add(int a, int b) {
-        return a + b;
+        return a + b + 1;
     }
 
     public int sub(int a, int b) {
@@ -8,7 +8,7 @@ public class Calculator {
     }
 
     public int mul(int a, int b) {
-        return a * b * 2;
+        return a * b * 3;
     }
 
     public int div(int a, int b) {
