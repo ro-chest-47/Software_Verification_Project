@@ -8,7 +8,7 @@ public class Calculator {
     }
 
     public int mul(int a, int b) {
-        return a * b * 2;
+        return a * b * 10;
     }
 
     public int div(int a, int b) {
