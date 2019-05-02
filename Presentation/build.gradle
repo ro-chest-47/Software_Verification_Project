@@ -1,7 +1,7 @@
 plugins {
     id 'java'
+    id "org.sonarqube" version "6.7.7"
 }
-
 group 'Software.Verification'
 version '1.0-SNAPSHOT'
 
