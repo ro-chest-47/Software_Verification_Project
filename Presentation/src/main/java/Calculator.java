@@ -2,7 +2,7 @@ public class Calculator {
 
     public static void main(String argv[]) {
 
-        int a = 10, b = 30;
+        int a = 10, b = 20;
         int result_1, result_2, result_3, result_4;
         Calcul cal = new Calcul();
 
